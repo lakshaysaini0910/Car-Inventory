@@ -1,0 +1,329 @@
+.admin-dashboard {
+    min-height: 100vh;
+
+    display: flex;
+
+    background-color: #0b0b0b;
+
+    color: white;
+}
+
+
+/* ============================= */
+/* SIDEBAR */
+/* ============================= */
+
+.admin-sidebar {
+    width: 240px;
+
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    box-sizing: border-box;
+
+    padding: 2rem 1.2rem;
+
+    background-color: #101010;
+
+    border-right: 1px solid #292929;
+}
+
+
+/* LOGO */
+
+.admin-sidebar-logo {
+    display: flex;
+
+    justify-content: center;
+
+    padding-bottom: 2rem;
+
+    border-bottom: 1px solid #292929;
+}
+
+.admin-sidebar-logo img {
+    width: 95px;
+
+    height: auto;
+}
+
+
+/* NAVIGATION */
+
+.admin-sidebar-nav {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 0.5rem;
+
+    margin-top: 2rem;
+}
+
+.admin-sidebar-nav a {
+    padding: 0.9rem 1rem;
+
+    color: #888;
+
+    text-decoration: none;
+
+    font-size: 0.9rem;
+
+    border: 1px solid transparent;
+
+    transition: all 0.3s ease;
+}
+
+.admin-sidebar-nav a:hover {
+    color: white;
+
+    background-color: #181818;
+}
+
+.admin-sidebar-nav a.active {
+    color: #c9a227;
+
+    background-color: #181818;
+
+    border-color: #292929;
+}
+
+
+/* LOGOUT */
+
+.admin-logout {
+    margin-top: auto;
+
+    padding: 0.9rem 1rem;
+
+    background-color: transparent;
+
+    border: 1px solid #333;
+
+    color: #888;
+
+    font-family: inherit;
+
+    font-size: 0.9rem;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+.admin-logout:hover {
+    color: #ff5555;
+
+    border-color: #ff5555;
+}
+
+
+/* ============================= */
+/* MAIN CONTENT */
+/* ============================= */
+
+.admin-content {
+    flex: 1;
+
+    min-width: 0;
+
+    padding: 3rem;
+
+    box-sizing: border-box;
+}
+
+
+/* TOP BAR */
+
+.admin-topbar {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin-bottom: 3rem;
+}
+
+.admin-eyebrow {
+    margin: 0 0 0.5rem;
+
+    color: #c9a227;
+
+    font-size: 0.7rem;
+
+    font-weight: 600;
+
+    letter-spacing: 0.2em;
+}
+
+.admin-topbar h1 {
+    margin: 0;
+
+    font-size: 2.5rem;
+}
+
+
+/* ADMIN USER */
+
+.admin-user {
+    padding: 0.7rem 1rem;
+
+    background-color: #181818;
+
+    border: 1px solid #292929;
+
+    color: #bbb;
+
+    font-size: 0.85rem;
+}
+
+
+/* ============================= */
+/* STAT CARDS */
+/* ============================= */
+
+.admin-stats {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 1rem;
+}
+
+.admin-stat-card {
+    padding: 1.5rem;
+
+    background-color: #111;
+
+    border: 1px solid #292929;
+
+    transition: border-color 0.3s ease;
+}
+
+.admin-stat-card:hover {
+    border-color: #c9a227;
+}
+
+.admin-stat-card span {
+    color: #777;
+
+    font-size: 0.8rem;
+}
+
+.admin-stat-card h2 {
+    margin: 0.7rem 0 0;
+
+    color: #c9a227;
+
+    font-size: 2rem;
+}
+
+.admin-message {
+    min-height: 60vh;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+}
+
+.admin-message h2 {
+    margin-bottom: 0.5rem;
+}
+
+.admin-message p {
+    margin: 0;
+
+    color: #888;
+}
+
+
+
+/* ============================= */
+/* TABLET */
+/* ============================= */
+
+@media (max-width: 900px) {
+
+    .admin-sidebar {
+        width: 200px;
+    }
+
+    .admin-content {
+        padding: 2rem;
+    }
+
+    .admin-stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* ============================= */
+/* MOBILE */
+/* ============================= */
+
+@media (max-width: 650px) {
+
+    .admin-sidebar {
+        width: 70px;
+
+        padding: 1.5rem 0.5rem;
+    }
+
+
+    .admin-sidebar-logo img {
+        width: 55px;
+    }
+
+
+    .admin-sidebar-nav a {
+        padding: 0.8rem 0.3rem;
+
+        text-align: center;
+
+        font-size: 0;
+    }
+
+
+    .admin-sidebar-nav a::first-letter {
+        font-size: 1rem;
+    }
+
+
+    .admin-logout {
+        padding: 0.7rem 0.2rem;
+
+        font-size: 0;
+    }
+
+
+    .admin-logout::after {
+        content: "↪";
+
+        font-size: 1.2rem;
+    }
+
+
+    .admin-content {
+        padding: 1.5rem 1rem;
+    }
+
+
+    .admin-topbar h1 {
+        font-size: 2rem;
+    }
+
+
+    .admin-stats {
+        grid-template-columns: 1fr;
+    }
+
+}

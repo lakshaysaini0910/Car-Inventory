@@ -1,0 +1,196 @@
+.sell-cars-page {
+    min-height: 100vh;
+    background-color: #0b0b0b;
+    color: white;
+}
+
+.sell-hero {
+    min-height: 55vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
+.sell-hero-content {
+    max-width: 850px;
+}
+
+.sell-eyebrow {
+    margin-bottom: 1rem;
+    color: #c9a227;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.25em;
+}
+
+.sell-hero h1 {
+    margin: 0;
+    font-size: 4.5rem;
+    line-height: 1.05;
+}
+
+.sell-hero h1 span {
+    display: block;
+    color: #c9a227;
+}
+
+.sell-hero p:last-child {
+    max-width: 650px;
+    margin: 1.5rem auto 0;
+    color: #999;
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+.sell-form-section {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 5rem 2rem 8rem;
+}
+
+.sell-form-intro {
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.sell-form-intro h2 {
+    margin: 0;
+    font-size: 2.8rem;
+}
+
+.sell-form-intro p:last-child {
+    color: #888;
+    line-height: 1.6;
+}
+
+.sell-form {
+    padding: 3rem;
+    background-color: #111;
+    border: 1px solid #292929;
+}
+
+.form-section {
+    margin-bottom: 3rem;
+    padding-bottom: 3rem;
+    border-bottom: 1px solid #292929;
+}
+
+.form-section:last-of-type {
+    margin-bottom: 2rem;
+    border-bottom: none;
+}
+
+.form-section h3 {
+    margin: 0 0 2rem;
+    font-size: 1.3rem;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.full-width {
+    grid-column: span 2;
+}
+
+.form-group label {
+    color: #bbb;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.9rem 1rem;
+    background-color: #080808;
+    border: 1px solid #333;
+    color: white;
+    font-family: inherit;
+    font-size: 0.9rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #c9a227;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.sell-submit {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #c9a227;
+    background-color: #c9a227;
+    color: #000;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.sell-submit:hover {
+    background-color: transparent;
+    color: #c9a227;
+}
+
+
+@media (max-width: 700px) {
+
+    .sell-hero {
+        min-height: 50vh;
+
+        padding: 4rem 1.5rem;
+    }
+
+    .sell-hero h1 {
+        font-size: 3rem;
+    }
+
+    .sell-form-section {
+        padding: 4rem 1rem 6rem;
+    }
+
+    .sell-form {
+        padding: 2rem 1.2rem;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .full-width {
+        grid-column: auto;
+    }
+
+}
+
+
+@media (max-width: 450px) {
+
+    .sell-hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .sell-form-intro h2 {
+        font-size: 2.2rem;
+    }
+
+}

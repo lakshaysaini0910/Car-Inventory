@@ -1,0 +1,265 @@
+.about-page {
+    min-height: 100vh;
+    background-color: #0b0b0b;
+    color: white;
+}
+
+.about-hero {
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6rem 2rem;
+    text-align: center;
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 0.95)
+        );
+}
+
+.about-hero-content {
+    max-width: 900px;
+}
+
+.about-eyebrow {
+    margin-bottom: 1rem;
+    color: #c9a227;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.25em;
+}
+
+.about-hero h1 {
+    margin: 0;
+    font-size: 4.5rem;
+    line-height: 1.05;
+    font-weight: 700;
+}
+
+.about-hero h1 span {
+    display: block;
+    color: #c9a227;
+}
+
+.about-intro {
+    max-width: 700px;
+    margin: 2rem auto 0;
+    color: #bdbdbd;
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+.about-story {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 7rem 2rem;
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 6rem;
+    border-top: 1px solid #222;
+}
+
+.about-story-heading h2 {
+    margin: 0;
+    font-size: 3rem;
+    line-height: 1.1;
+}
+
+.about-story-heading h2 span {
+    color: #c9a227;
+}
+
+.about-story-content {
+    color: #aaa;
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
+.about-story-content p {
+    margin: 0 0 1.5rem;
+}
+
+.about-highlights {
+    padding: 7rem 2rem;
+    background-color: #101010;
+}
+
+.about-section-heading {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.about-section-heading h2 {
+    margin: 0;
+
+    font-size: 3rem;
+}
+
+.about-cards {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.about-card {
+    padding: 3rem 2.5rem;
+    background-color: #151515;
+    border: 1px solid #292929;
+    border-radius: 38px;
+    border-color: #c9a227;
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease;
+}
+
+.about-card-number {
+    margin-bottom: 1.5rem;
+    color: #c9a227;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.about-card h3 {
+    margin: 0 0 1rem;
+    font-size: 1.2rem;
+}
+
+.about-card p {
+    margin: 0;
+    color: #888;
+    line-height: 1.7;
+}
+
+.about-cta {
+    padding: 8rem 2rem;
+    text-align: center;
+}
+
+.about-cta h2 {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 3.2rem;
+    line-height: 1.1;
+}
+
+.about-cta h2 span {
+    color: #c9a227;
+}
+
+.about-cta > p:not(.about-eyebrow) {
+    max-width: 600px;
+    margin: 1.5rem auto 0;
+    color: #999;
+    line-height: 1.7;
+}
+
+.about-cta-actions {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2.5rem;
+}
+
+.about-primary-btn,
+.about-secondary-btn {
+    padding: 0.9rem 1.8rem;
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.about-primary-btn {
+    border: 1px solid #c9a227;
+    background-color: #c9a227;
+    color: #000;
+}
+
+.about-primary-btn:hover {
+    background-color: transparent;
+    color: #c9a227;
+}
+
+.about-secondary-btn {
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+}
+
+.about-secondary-btn:hover {
+    background-color: white;
+    color: #000;
+}
+
+@media (max-width: 900px) {
+
+    .about-hero h1 {
+        font-size: 3.5rem;
+    }
+
+    .about-story {
+        grid-template-columns: 1fr;
+
+        gap: 3rem;
+    }
+
+    .about-cards {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+
+
+@media (max-width: 600px) {
+
+    .about-hero {
+        min-height: 60vh;
+        padding: 5rem 1.5rem;
+    }
+
+    .about-hero h1 {
+        font-size: 2.6rem;
+    }
+
+    .about-intro {
+        font-size: 1rem;
+    }
+
+    .about-story {
+        padding: 5rem 1.5rem;
+    }
+
+    .about-story-heading h2 {
+        font-size: 2.4rem;
+    }
+
+    .about-highlights {
+        padding: 5rem 1.5rem;
+    }
+
+    .about-section-heading h2 {
+        font-size: 2.4rem;
+    }
+
+    .about-card {
+        padding: 2.5rem 2rem;
+    }
+
+    .about-cta {
+        padding: 6rem 1.5rem;
+    }
+
+    .about-cta h2 {
+        font-size: 2.4rem;
+    }
+
+    .about-cta-actions {
+        flex-direction: column;
+    }
+
+}

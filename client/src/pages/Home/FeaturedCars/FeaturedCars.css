@@ -1,0 +1,333 @@
+.featured-cars {
+    position: relative;
+
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    padding: 7rem 2rem;
+
+    z-index: 2;
+}
+
+
+/* HEADER */
+
+.featured-cars-header {
+    display: flex;
+
+    align-items: flex-end;
+    justify-content: space-between;
+
+    gap: 2rem;
+
+    margin-bottom: 2.5rem;
+}
+
+.featured-cars-eyebrow {
+    margin: 0 0 0.6rem;
+
+    color: #c9a227;
+
+    font-size: 0.75rem;
+    font-weight: 600;
+
+    letter-spacing: 0.2em;
+}
+
+.featured-cars-header h2 {
+    margin: 0;
+
+    color: #ffffff;
+
+    font-size: 2.5rem;
+
+    line-height: 1.1;
+}
+
+.featured-view-all {
+    color: #c9a227;
+
+    text-decoration: none;
+
+    font-size: 0.85rem;
+    font-weight: 600;
+
+    white-space: nowrap;
+
+    transition: opacity 0.3s ease;
+}
+
+.featured-view-all:hover {
+    opacity: 0.7;
+}
+
+
+/* GRID */
+
+.featured-cars-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 1.2rem;
+}
+
+
+/* CARD */
+
+.featured-car-card {
+    overflow: hidden;
+    width: 50vh;
+    border: 1px solid #292929;
+
+    border-radius: 16px;
+
+    background-color: #111111;
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease;
+
+    text-decoration: none;
+}
+
+.featured-car-card:hover {
+    transform: translateY(-6px);
+
+    border-color: #c9a227;
+}
+
+
+/* IMAGE */
+
+.featured-car-image {
+    position: relative;
+
+    width: 100%;
+    height: 220px;
+
+    overflow: hidden;
+
+    background-color: #181818;
+}
+
+.featured-car-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition: transform 0.5s ease;
+}
+
+.featured-car-card:hover .featured-car-image img {
+    transform: scale(1.04);
+}
+
+
+/* BADGE */
+
+.featured-badge {
+    position: absolute;
+
+    top: 1rem;
+    left: 1rem;
+
+    padding: 0.4rem 0.7rem;
+
+    border: 1px solid #c9a227;
+
+    background-color: rgba(11, 11, 11, 0.9);
+
+    color: #c9a227;
+
+    font-size: 0.65rem;
+    font-weight: 600;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.1em;
+}
+
+
+/* INFO */
+
+.featured-car-info {
+    padding: 1.3rem;
+}
+
+.featured-car-year {
+    margin: 0 0 0.4rem;
+
+    color: #c9a227;
+
+    font-size: 0.75rem;
+}
+
+.featured-car-info h3 {
+    margin: 0;
+
+    color: #ffffff;
+
+    font-size: 1.15rem;
+
+    line-height: 1.3;
+}
+
+
+/* SPECS */
+
+.featured-car-specs {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 0.5rem;
+
+    margin-top: 1rem;
+}
+
+.featured-car-specs span {
+    padding-right: 0.5rem;
+
+    border-right: 1px solid #333333;
+
+    color: #888888;
+
+    font-size: 0.7rem;
+}
+
+.featured-car-specs span:last-child {
+    border-right: none;
+}
+
+
+/* BOTTOM */
+
+.featured-car-bottom {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 1rem;
+
+    margin-top: 1.3rem;
+
+    padding-top: 1rem;
+
+    border-top: 1px solid #292929;
+}
+
+.featured-car-bottom strong {
+    color: #ffffff;
+
+    font-size: 1rem;
+}
+
+
+/* VIEW DETAILS */
+
+.featured-view-details {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 0.6rem 0.8rem;
+
+    border: 1px solid #c9a227;
+
+    background-color: transparent;
+
+    color: #c9a227;
+    font-size: 0.7rem;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+.featured-view-details:hover {
+    background-color: #c9a227;
+
+    color: #000000;
+}
+
+
+/* NO CARS */
+
+.featured-no-cars {
+    padding: 4rem 2rem;
+
+    border: 1px solid #292929;
+
+    border-radius: 16px;
+
+    background-color: #111111;
+
+    text-align: center;
+}
+
+.featured-no-cars h3 {
+    margin: 0 0 0.5rem;
+
+    color: #ffffff;
+
+    font-size: 1.3rem;
+}
+
+.featured-no-cars p {
+    margin: 0;
+
+    color: #888888;
+
+    font-size: 0.9rem;
+}
+
+
+/* TABLET */
+
+@media (max-width: 1000px) {
+
+    .featured-cars-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .featured-car-card {
+        width: auto;
+    }
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .featured-cars {
+        padding: 5rem 1.2rem;
+    }
+
+    .featured-cars-header {
+        align-items: flex-start;
+
+        flex-direction: column;
+    }
+
+    .featured-cars-header h2 {
+        font-size: 2rem;
+    }
+
+    .featured-cars-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .featured-car-image {
+        height: 240px;
+    }
+
+}

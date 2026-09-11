@@ -1,0 +1,541 @@
+.update-cars-page {
+    min-height: 100vh;
+    padding: 5rem 2rem;
+    background-color: #0b0b0b;
+    color: white;
+}
+
+.update-cars-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+
+/* HEADER */
+
+.update-cars-header {
+    max-width: 750px;
+    margin: 0 auto 3rem;
+    text-align: center;
+}
+
+.update-cars-eyebrow {
+    margin-bottom: 1rem;
+    color: #c9a227;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.25em;
+}
+
+.update-cars-header h1 {
+    margin: 0;
+    font-size: 3rem;
+    line-height: 1.1;
+    font-weight: 700;
+}
+
+.update-cars-header > p:last-child {
+    max-width: 600px;
+    margin: 1.5rem auto 0;
+    color: #bdbdbd;
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+
+/* UPDATE FORM */
+
+.update-car-form {
+    margin-bottom: 2rem;
+    padding: 2.5rem;
+
+    border: 1px solid #292929;
+    background-color: #111111;
+
+    border-radius: 38px;
+}
+
+
+/* FORM HEADER */
+
+.update-form-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 2rem;
+}
+
+.update-form-eyebrow {
+    margin: 0 0 0.5rem;
+
+    color: #c9a227;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+}
+
+.update-form-top h2 {
+    margin: 0;
+    color: white;
+    font-size: 1.5rem;
+}
+
+
+/* CLOSE BUTTON */
+
+.close-edit-button {
+    padding: 0.8rem 1.4rem;
+
+    border: 1px solid #fff;
+    background-color: #fff;
+    color: #000;
+
+    font-family: Poppins, sans-serif;
+    font-size: 0.85rem;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+.close-edit-button:hover {
+    background-color: transparent;
+    color: white;
+}
+
+
+/* FIELDS */
+
+.update-car-fields {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.form-group-full {
+    grid-column: 1 / -1;
+}
+
+.form-group label {
+    color: #e0e0e0;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.input-hint {
+    margin-left: 8px;
+    color: #777;
+    font-size: 0.75rem;
+    font-weight: 400;
+}
+
+
+/* INPUTS */
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    box-sizing: border-box;
+
+    padding: 0.85rem 1rem;
+
+    border: 1px solid #292929;
+    border-radius: 8px;
+
+    background-color: #0b0b0b;
+    color: white;
+
+    font-family: Poppins, sans-serif;
+    font-size: 0.9rem;
+
+    outline: none;
+
+    transition:
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #666;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #c9a227;
+    box-shadow: 0 0 0 1px #c9a227;
+}
+
+
+/* SELECT */
+
+.form-group select {
+    cursor: pointer;
+}
+
+.form-group select option {
+    background-color: #111111;
+    color: white;
+}
+
+
+/* TEXTAREA */
+
+.form-group textarea {
+    min-height: 130px;
+
+    line-height: 1.6;
+
+    resize: vertical;
+}
+
+
+/* BOTTOM */
+
+.update-car-bottom {
+    margin-top: 2rem;
+    padding-top: 2rem;
+
+    border-top: 1px solid #292929;
+}
+
+
+/* FEATURED */
+
+.featured-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+
+    margin-bottom: 1.5rem;
+
+    color: #e0e0e0;
+    font-size: 0.9rem;
+
+    cursor: pointer;
+}
+
+.featured-checkbox input {
+    width: 17px;
+    height: 17px;
+
+    accent-color: #c9a227;
+
+    cursor: pointer;
+}
+
+
+/* MESSAGES */
+
+.update-error,
+.update-success {
+    margin: 0 0 1.5rem;
+    padding: 0.9rem 1rem;
+
+    border-radius: 8px;
+
+    font-size: 0.9rem;
+}
+
+.update-error {
+    border: 1px solid #6b2424;
+    background-color: #1a0d0d;
+    color: #ff8c8c;
+}
+
+.update-success {
+    border: 1px solid #496b3e;
+    background-color: #0d180d;
+    color: #9ad38d;
+}
+
+
+/* ACTIONS */
+
+.update-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+.update-cancel-button,
+.update-save-button {
+    padding: 0.9rem 1.8rem;
+
+    border-radius: 0;
+
+    font-family: Poppins, sans-serif;
+    font-size: 0.95rem;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+.update-cancel-button {
+    border: 1px solid #fff;
+    background-color: #fff;
+    color: #000;
+}
+
+.update-cancel-button:hover {
+    background-color: transparent;
+    color: #fff;
+}
+
+.update-save-button {
+    border: 1px solid #c9a227;
+    background-color: #c9a227;
+    color: #000;
+}
+
+.update-save-button:hover {
+    background-color: transparent;
+    color: #c9a227;
+}
+
+.update-save-button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+
+/* INVENTORY */
+
+.update-cars-list {
+    padding: 2.5rem;
+
+    border: 1px solid #292929;
+    background-color: #111111;
+
+    border-radius: 38px;
+}
+
+.update-cars-list-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 2rem;
+}
+
+.update-cars-list-header h2 {
+    margin: 0;
+
+    color: #c9a227;
+    font-size: 1.5rem;
+}
+
+.update-cars-list-header span {
+    color: #999;
+    font-size: 0.9rem;
+}
+
+
+/* CAR GRID */
+
+.update-cars-grid {
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(280px, 1fr)
+    );
+
+    gap: 1.5rem;
+}
+
+
+/* CAR CARD */
+
+.update-car-card {
+    overflow: hidden;
+
+    border: 1px solid #292929;
+    background-color: #0b0b0b;
+
+    border-radius: 20px;
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease;
+}
+
+.update-car-card:hover {
+    transform: translateY(-4px);
+    border-color: #c9a227;
+}
+
+
+/* IMAGE */
+
+.update-car-image {
+    width: 100%;
+    height: 200px;
+
+    background-color: #151515;
+}
+
+.update-car-image img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+/* CAR INFO */
+
+.update-car-info {
+    padding: 1.5rem;
+}
+
+.update-car-year {
+    margin: 0 0 0.4rem;
+
+    color: #c9a227;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.update-car-info h3 {
+    margin: 0;
+
+    color: white;
+    font-size: 1.25rem;
+}
+
+.update-car-variant {
+    margin: 0.5rem 0 1rem;
+
+    color: #999;
+    font-size: 0.85rem;
+}
+
+
+/* CAR DETAILS */
+
+.update-car-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+
+    margin-bottom: 1.5rem;
+}
+
+.update-car-details span {
+    padding: 0.35rem 0.6rem;
+
+    border: 1px solid #292929;
+    border-radius: 5px;
+
+    color: #bdbdbd;
+    font-size: 0.75rem;
+}
+
+
+/* CARD BOTTOM */
+
+.update-car-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 1rem;
+}
+
+.update-car-bottom strong {
+    color: white;
+    font-size: 1.1rem;
+}
+
+.update-car-bottom button {
+    padding: 0.7rem 1rem;
+
+    border: 1px solid #c9a227;
+    background-color: #c9a227;
+    color: #000;
+
+    font-family: Poppins, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+.update-car-bottom button:hover {
+    background-color: transparent;
+    color: #c9a227;
+}
+
+
+/* EMPTY / LOADING */
+
+.update-cars-message {
+    margin: 0;
+    padding: 3rem 1rem;
+
+    text-align: center;
+
+    color: #999;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+    .update-cars-page {
+        padding: 4rem 1.2rem;
+    }
+
+    .update-cars-header h1 {
+        font-size: 2.3rem;
+    }
+
+    .update-car-form,
+    .update-cars-list {
+        padding: 2rem 1.2rem;
+        border-radius: 25px;
+    }
+
+    .update-form-top {
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .update-car-fields {
+        grid-template-columns: 1fr;
+    }
+
+    .form-group-full {
+        grid-column: auto;
+    }
+
+    .update-actions {
+        flex-direction: column-reverse;
+    }
+
+    .update-cancel-button,
+    .update-save-button {
+        width: 100%;
+    }
+
+    .update-cars-grid {
+        grid-template-columns: 1fr;
+    }
+}

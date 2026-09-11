@@ -1,0 +1,90 @@
+.not-found-page {
+    min-height: 70vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 4rem 2rem;
+
+    background-color: #0b0b0b;
+    color: white;
+
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.not-found-eyebrow {
+    margin: 0 0 1rem;
+
+    color: #c9a227;
+
+    font-size: 0.75rem;
+    font-weight: 600;
+
+    letter-spacing: 0.2em;
+}
+
+.not-found-page h1 {
+    margin: 0;
+
+    color: #c9a227;
+
+    font-size: 8rem;
+    line-height: 1;
+
+    font-weight: 700;
+}
+
+.not-found-page h2 {
+    margin: 1rem 0 0;
+
+    font-size: 2rem;
+}
+
+.not-found-page > p:not(.not-found-eyebrow) {
+    margin: 1rem 0 2rem;
+
+    max-width: 450px;
+
+    color: #888;
+
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.not-found-button {
+    padding: 0.8rem 1.4rem;
+
+    border: 1px solid #c9a227;
+
+    background-color: transparent;
+
+    color: #c9a227;
+
+    text-decoration: none;
+
+    font-size: 0.85rem;
+    font-weight: 600;
+
+    transition: all 0.3s ease;
+}
+
+.not-found-button:hover {
+    background-color: #c9a227;
+    color: #000;
+}
+
+
+@media (max-width: 600px) {
+
+    .not-found-page h1 {
+        font-size: 6rem;
+    }
+
+    .not-found-page h2 {
+        font-size: 1.6rem;
+    }
+
+}

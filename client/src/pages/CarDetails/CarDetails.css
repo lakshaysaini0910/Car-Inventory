@@ -1,0 +1,586 @@
+.car-details-page {
+    min-height: 100vh;
+    padding: 5rem 2rem;
+    background-color: #0b0b0b;
+    color: white;
+}
+
+.car-details-container {
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+
+/* BACK BUTTON */
+
+.car-details-back {
+    display: inline-block;
+
+    margin-bottom: 2rem;
+
+    color: #bdbdbd;
+
+    text-decoration: none;
+
+    font-size: 0.9rem;
+
+    transition: color 0.3s ease;
+}
+
+.car-details-back:hover {
+    color: #c9a227;
+}
+
+
+/* GALLERY */
+
+.car-gallery {
+    margin-bottom: 4rem;
+}
+
+.car-main-image {
+    width: 100%;
+    height: 600px;
+
+    overflow: hidden;
+
+    border: 1px solid #292929;
+    border-radius: 25px;
+
+    background-color: #111111;
+}
+
+.car-main-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+}
+
+
+/* THUMBNAILS */
+
+.car-thumbnails {
+    display: flex;
+
+    gap: 0.8rem;
+
+    margin-top: 1rem;
+
+    overflow-x: auto;
+
+    padding-bottom: 0.5rem;
+}
+
+.thumbnail {
+    flex: 0 0 100px;
+
+    width: 100px;
+    height: 75px;
+
+    padding: 0;
+
+    overflow: hidden;
+
+    border: 1px solid #292929;
+    border-radius: 8px;
+
+    background-color: #111111;
+
+    cursor: pointer;
+
+    opacity: 0.6;
+
+    transition:
+        opacity 0.3s ease,
+        border-color 0.3s ease;
+}
+
+.thumbnail:hover {
+    opacity: 1;
+    border-color: #c9a227;
+}
+
+.thumbnail.active {
+    opacity: 1;
+    border-color: #c9a227;
+}
+
+.thumbnail img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+}
+
+
+/* CAR HEADER */
+
+.car-details-header {
+    display: flex;
+
+    align-items: flex-end;
+    justify-content: space-between;
+
+    gap: 2rem;
+
+    margin-bottom: 2.5rem;
+}
+
+.car-details-year {
+    margin: 0 0 0.6rem;
+
+    color: #c9a227;
+
+    font-size: 0.85rem;
+    font-weight: 600;
+
+    letter-spacing: 0.08em;
+}
+
+.car-details-header h1 {
+    margin: 0;
+
+    color: white;
+
+    font-size: 3.2rem;
+    line-height: 1.1;
+}
+
+.car-details-variant {
+    margin: 0.8rem 0 0;
+
+    color: #999;
+
+    font-size: 1rem;
+}
+
+.car-details-price {
+    display: flex;
+    flex-direction: column;
+
+    align-items: flex-end;
+
+    gap: 0.3rem;
+}
+
+.car-details-price span {
+    color: #777;
+
+    font-size: 0.8rem;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.12em;
+}
+
+.car-details-price strong {
+    color: #c9a227;
+
+    font-size: 1.8rem;
+}
+
+
+/* QUICK SPECS */
+
+.car-quick-specs {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    margin-bottom: 5rem;
+
+    border-top: 1px solid #292929;
+    border-bottom: 1px solid #292929;
+}
+
+.car-quick-specs > div {
+    padding: 1.5rem;
+
+    border-right: 1px solid #292929;
+}
+
+.car-quick-specs > div:last-child {
+    border-right: none;
+}
+
+.car-quick-specs span {
+    display: block;
+
+    margin-bottom: 0.5rem;
+
+    color: #777;
+
+    font-size: 0.75rem;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.1em;
+}
+
+.car-quick-specs strong {
+    color: #e5e5e5;
+
+    font-size: 0.95rem;
+
+    font-weight: 500;
+}
+
+
+/* VEHICLE DETAILS */
+
+.vehicle-details {
+    margin-bottom: 5rem;
+}
+
+.section-heading {
+    margin-bottom: 2rem;
+}
+
+.section-heading p {
+    margin: 0 0 0.6rem;
+
+    color: #c9a227;
+
+    font-size: 0.75rem;
+    font-weight: 600;
+
+    letter-spacing: 0.2em;
+}
+
+.section-heading h2 {
+    margin: 0;
+
+    color: white;
+
+    font-size: 2rem;
+}
+
+
+/* DETAILS GRID */
+
+.vehicle-details-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    border-top: 1px solid #292929;
+}
+
+.vehicle-details-grid > div {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 1rem;
+
+    padding: 1.2rem 0;
+
+    border-bottom: 1px solid #292929;
+}
+
+.vehicle-details-grid > div:nth-child(odd) {
+    padding-right: 2rem;
+    border-right: 1px solid #292929;
+}
+
+.vehicle-details-grid > div:nth-child(even) {
+    padding-left: 2rem;
+}
+
+.vehicle-details-grid span {
+    color: #777;
+
+    font-size: 0.85rem;
+}
+
+.vehicle-details-grid strong {
+    color: #e5e5e5;
+
+    font-size: 0.9rem;
+
+    font-weight: 500;
+
+    text-align: right;
+}
+
+
+/* ENQUIRY SECTION */
+
+.car-enquiry {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 3rem;
+
+    padding: 3rem;
+
+    border: 1px solid #292929;
+    border-radius: 25px;
+
+    background-color: #111111;
+}
+
+.car-enquiry-eyebrow {
+    margin: 0 0 0.7rem;
+
+    color: #c9a227;
+
+    font-size: 0.75rem;
+    font-weight: 600;
+
+    letter-spacing: 0.2em;
+}
+
+.car-enquiry h2 {
+    margin: 0;
+
+    color: white;
+
+    font-size: 2rem;
+}
+
+.car-enquiry p:last-child {
+    max-width: 550px;
+
+    margin: 0.8rem 0 0;
+
+    color: #999;
+
+    font-size: 0.9rem;
+
+    line-height: 1.7;
+}
+
+
+/* ENQUIRY BUTTONS */
+
+.car-enquiry-buttons {
+    display: flex;
+
+    gap: 1rem;
+
+    flex-shrink: 0;
+}
+
+.whatsapp-button,
+.instagram-button {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    min-width: 130px;
+
+    padding: 0.9rem 1.4rem;
+
+    border: 1px solid #c9a227;
+
+    text-decoration: none;
+
+    font-size: 0.85rem;
+    font-weight: 600;
+
+    transition: all 0.3s ease;
+}
+
+.whatsapp-button {
+    background-color: #c9a227;
+
+    color: #000;
+}
+
+.whatsapp-button:hover {
+    background-color: transparent;
+
+    color: #c9a227;
+}
+
+.instagram-button {
+    background-color: transparent;
+
+    color: #c9a227;
+}
+
+.instagram-button:hover {
+    background-color: #c9a227;
+
+    color: #000;
+}
+
+
+/* LOADING / ERROR */
+
+.car-details-message {
+    min-height: 60vh;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+}
+
+.car-details-message h2 {
+    margin: 0 0 0.7rem;
+
+    font-size: 2rem;
+}
+
+.car-details-message p {
+    margin: 0 0 1.5rem;
+
+    color: #999;
+}
+
+.back-to-cars {
+    padding: 0.9rem 1.5rem;
+
+    border: 1px solid #c9a227;
+
+    background-color: #c9a227;
+
+    color: #000;
+
+    text-decoration: none;
+
+    font-size: 0.85rem;
+    font-weight: 600;
+
+    transition: all 0.3s ease;
+}
+
+.back-to-cars:hover {
+    background-color: transparent;
+
+    color: #c9a227;
+}
+
+
+/* TABLET */
+
+@media (max-width: 900px) {
+
+    .car-main-image {
+        height: 500px;
+    }
+
+    .car-details-header {
+        align-items: flex-start;
+
+        flex-direction: column;
+    }
+
+    .car-details-price {
+        align-items: flex-start;
+    }
+
+    .car-quick-specs {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .car-quick-specs > div:nth-child(2) {
+        border-right: none;
+    }
+
+    .car-quick-specs > div {
+        border-bottom: 1px solid #292929;
+    }
+
+    .car-enquiry {
+        align-items: flex-start;
+
+        flex-direction: column;
+    }
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .car-details-page {
+        padding: 4rem 1.2rem;
+    }
+
+    .car-main-image {
+        height: 300px;
+
+        border-radius: 18px;
+    }
+
+    .car-details-header h1 {
+        font-size: 2.2rem;
+    }
+
+    .car-details-price strong {
+        font-size: 1.5rem;
+    }
+
+    .car-quick-specs {
+        grid-template-columns: 1fr;
+    }
+
+    .car-quick-specs > div {
+        border-right: none;
+    }
+
+    .vehicle-details-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .vehicle-details-grid > div:nth-child(odd) {
+        padding-right: 0;
+
+        border-right: none;
+    }
+
+    .vehicle-details-grid > div:nth-child(even) {
+        padding-left: 0;
+    }
+
+    .vehicle-details-grid > div {
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        gap: 0.4rem;
+    }
+
+    .vehicle-details-grid strong {
+        text-align: left;
+    }
+
+    .car-enquiry {
+        padding: 2rem 1.3rem;
+
+        border-radius: 18px;
+    }
+
+    .car-enquiry h2 {
+        font-size: 1.6rem;
+    }
+
+    .car-enquiry-buttons {
+        width: 100%;
+
+        flex-direction: column;
+    }
+
+    .whatsapp-button,
+    .instagram-button {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+}

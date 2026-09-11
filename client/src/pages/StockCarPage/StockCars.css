@@ -1,0 +1,265 @@
+.stock-cars-page {
+    min-height: 100vh;
+    background-color: #0b0b0b;
+    color: white;
+}
+
+.stock-cars-header {
+    padding: 6rem 2rem 4rem;
+    text-align: center;
+}
+
+.stock-cars-eyebrow {
+    margin-bottom: 1rem;
+    color: #c9a227;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.25em;
+}
+
+.stock-cars-header h1 {
+    margin: 0;
+    font-size: 4rem;
+    line-height: 1.1;
+}
+
+.stock-cars-header p:last-child {
+    margin: 1.5rem auto 0;
+    color: #999;
+    font-size: 1.05rem;
+}
+
+.car-filters {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 2fr repeat(4, 1fr);
+    gap: 1rem;
+    border: 1px solid #292929;
+    border-radius: 24px;
+    background-color: #111;
+}
+
+.search-box input,
+.car-filters select {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.9rem 1rem;
+    border: 1px solid #333;
+    border-radius: 6px;
+    background-color: #080808;
+    color: white;
+    font-size: 0.9rem;
+    outline: none;
+}
+
+.search-box input:focus,
+.car-filters select:focus {
+    border-color: #c9a227;
+}
+
+.cars-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 5rem 2rem 7rem;
+}
+
+.cars-result-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.cars-result-header h2 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.cars-result-header span {
+    color: #888;
+}
+
+.cars-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.car-card {
+    overflow: hidden;
+    background-color: #111;
+    border: 1px solid #292929;
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease;
+}
+
+.car-card:hover {
+    transform: translateY(-6px);
+    border-color: #c9a227;
+}
+
+.car-image {
+    width: 100%;
+    height: 230px;
+    overflow: hidden;
+    background-color: #181818;
+}
+
+.car-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.car-card:hover .car-image img {
+    transform: scale(1.04);
+}
+
+.car-info {
+    padding: 1.5rem;
+}
+
+.car-year {
+    margin: 0 0 0.4rem;
+    color: #c9a227;
+    font-size: 0.8rem;
+}
+
+.car-info h3 {
+    margin: 0;
+    font-size: 1.3rem;
+}
+
+.car-specs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.car-specs span {
+    padding: 0.35rem 0.6rem;
+    background-color: #1b1b1b;
+    color: #999;
+    font-size: 0.75rem;
+}
+
+.car-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+    padding-top: 1.2rem;
+    border-top: 1px solid #292929;
+}
+
+.car-bottom strong {
+    color: white;
+    font-size: 1.1rem;
+}
+
+.view-details-button {
+    padding: 0.6rem 0.9rem;
+    border: 1px solid #c9a227;
+    background-color: transparent;
+    color: #c9a227;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.view-details-button:hover {
+    background-color: #c9a227;
+    color: #000;
+}
+
+.no-cars {
+    padding: 5rem 1rem;
+    text-align: center;
+}
+
+.no-cars h3 {
+    margin-bottom: 0.5rem;
+}
+
+.no-cars p {
+    color: #888;
+}
+
+.cars-message {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
+.cars-message h3 {
+    margin-bottom: 0.5rem;
+    color: white;
+}
+
+.cars-message p {
+    margin: 0;
+    color: #888;
+}
+
+
+
+@media (max-width: 1000px) {
+
+    .car-filters {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .search-box {
+        grid-column: span 2;
+    }
+
+    .cars-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+
+
+@media (max-width: 600px) {
+
+    .stock-cars-header {
+        padding: 5rem 1.5rem 3rem;
+    }
+
+    .stock-cars-header h1 {
+        font-size: 2.6rem;
+    }
+
+    .car-filters {
+        margin: 0 1rem;
+
+        grid-template-columns: 1fr;
+
+        padding: 1.2rem;
+    }
+
+    .search-box {
+        grid-column: auto;
+    }
+
+    .cars-section {
+        padding: 4rem 1rem;
+    }
+
+    .cars-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cars-result-header h2 {
+        font-size: 1.5rem;
+    }
+
+}

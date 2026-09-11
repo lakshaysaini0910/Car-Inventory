@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Caacupe+One&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:wght@500&family=Roboto:ital,wght@0,100..900;1,100..900&family=Slabo+13px&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    /* outline: 1px solid red; */
+}
+
+body {
+
+    font-family: "Roboto", serif;
+}

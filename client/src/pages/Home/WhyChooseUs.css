@@ -1,0 +1,120 @@
+.why-choose-us {
+
+    padding: 7rem 2rem;
+
+    background-color: #0b0b0b;
+
+    color: white;
+
+}
+
+.why-header {
+
+    max-width: 750px;
+
+    margin: 0 auto 4rem;
+
+    text-align: center;
+
+}
+
+.why-eyebrow {
+
+    margin-bottom: 1rem;
+
+    color: #c9a227;
+
+    font-size: 0.8rem;
+
+    font-weight: 600;
+
+    letter-spacing: 0.25em;
+
+}
+
+.why-header h2 {
+
+    margin: 0;
+
+    font-size: 3rem;
+
+    line-height: 1.1;
+
+}
+
+.why-description {
+
+    max-width: 600px;
+
+    margin: 1.5rem auto 0;
+
+    color: #bdbdbd;
+
+    font-size: 1.05rem;
+
+    line-height: 1.7;
+
+}
+
+.why-cards {
+
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+    gap: 1.5rem;
+
+}
+
+.why-card {
+
+    padding: 2.5rem 2rem;
+
+    border: 1px solid #292929;
+
+    background-color: #111111;
+
+    border-color: #c9a227;
+
+    border-radius: 38px;
+
+    transition: transform 0.3s ease,
+
+        border-color 0.3s ease;
+
+}
+
+
+.why-card strong {
+
+    display: block;
+
+    margin-bottom: 1.2rem;
+
+    color: #c9a227;
+
+    font-size: 2.5rem;
+
+}
+
+.why-card h3 {
+
+    margin-bottom: 0.8rem;
+
+    font-size: 1.15rem;
+
+}
+
+.why-card p {
+
+    color: #999;
+
+    font-size: 0.95rem;
+
+    line-height: 1.7;
+
+}

@@ -1,0 +1,202 @@
+.admin-login-page {
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 2rem;
+
+    background:
+        radial-gradient(
+            circle at center,
+            #1a1a1a 0%,
+            #080808 55%,
+            #000 100%
+        );
+
+    color: white;
+}
+
+
+/* CARD */
+
+.admin-login-card {
+    width: 100%;
+    max-width: 430px;
+
+    padding: 3rem;
+
+    background-color: #101010;
+
+    border: 1px solid #292929;
+
+    box-shadow:
+        0 25px 80px rgba(0, 0, 0, 0.6);
+}
+
+
+/* LOGO */
+
+.admin-login-logo {
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: 2rem;
+}
+
+.admin-login-logo img {
+    width: 110px;
+    height: auto;
+}
+
+
+/* HEADING */
+
+.admin-login-heading {
+    text-align: center;
+
+    margin-bottom: 2.5rem;
+}
+
+.admin-login-heading p {
+    margin: 0 0 0.7rem;
+
+    color: #c9a227;
+
+    font-size: 0.7rem;
+    font-weight: 600;
+
+    letter-spacing: 0.25em;
+}
+
+.admin-login-heading h1 {
+    margin: 0;
+
+    font-size: 2.2rem;
+}
+
+.admin-login-heading span {
+    display: block;
+
+    margin-top: 0.7rem;
+
+    color: #777;
+
+    font-size: 0.85rem;
+}
+
+
+/* FORM */
+
+.admin-login-form {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 1.5rem;
+}
+
+.admin-form-group {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 0.6rem;
+}
+
+.admin-form-group label {
+    color: #bbb;
+
+    font-size: 0.85rem;
+}
+
+.admin-form-group input {
+    width: 100%;
+
+    box-sizing: border-box;
+
+    padding: 0.95rem 1rem;
+
+    background-color: #080808;
+
+    border: 1px solid #333;
+
+    color: white;
+
+    font-family: inherit;
+
+    font-size: 0.9rem;
+
+    outline: none;
+
+    transition: border-color 0.3s ease;
+}
+
+.admin-form-group input:focus {
+    border-color: #c9a227;
+}
+
+.admin-form-group input::placeholder {
+    color: #555;
+}
+
+
+/* BUTTON */
+
+.admin-login-button {
+    margin-top: 0.5rem;
+
+    padding: 1rem;
+
+    border: 1px solid #c9a227;
+
+    background-color: #c9a227;
+
+    color: #000;
+
+    font-size: 0.95rem;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+.admin-login-button:hover {
+    background-color: transparent;
+
+    color: #c9a227;
+}
+
+
+/* FOOTER */
+
+.admin-login-footer {
+    margin: 2rem 0 0;
+
+    text-align: center;
+
+    color: #555;
+
+    font-size: 0.75rem;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 500px) {
+
+    .admin-login-page {
+        padding: 1rem;
+    }
+
+    .admin-login-card {
+        padding: 2rem 1.5rem;
+    }
+
+    .admin-login-heading h1 {
+        font-size: 1.9rem;
+    }
+
+}

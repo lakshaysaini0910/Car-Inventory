@@ -1,0 +1,179 @@
+.admin-layout {
+    min-height: 100vh;
+
+    display: flex;
+
+    background-color: #0b0b0b;
+    color: white;
+}
+
+
+/* SIDEBAR */
+
+.admin-sidebar {
+    width: 240px;
+    min-width: 240px;
+
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 2rem 1.2rem;
+
+    box-sizing: border-box;
+
+    border-right: 1px solid #292929;
+
+    background-color: #111111;
+}
+
+
+/* LOGO */
+
+.admin-sidebar-logo {
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: 3rem;
+}
+
+.admin-sidebar-logo img {
+    width: 150px;
+    height: auto;
+
+    display: block;
+}
+
+
+/* NAVIGATION */
+
+.admin-sidebar-nav {
+    display: flex;
+    flex-direction: column;
+
+    gap: 0.4rem;
+}
+
+.admin-sidebar-nav a {
+    padding: 0.9rem 1rem;
+
+    border: 1px solid transparent;
+
+    color: #bdbdbd;
+
+    text-decoration: none;
+
+    font-size: 0.9rem;
+    font-weight: 500;
+
+    transition: all 0.3s ease;
+}
+
+.admin-sidebar-nav a:hover {
+    border-color: #292929;
+
+    background-color: #0b0b0b;
+
+    color: #c9a227;
+}
+
+.admin-sidebar-nav a.active {
+    border-color: #c9a227;
+
+    background-color: #0b0b0b;
+
+    color: #c9a227;
+}
+
+
+/* LOGOUT */
+
+.admin-logout {
+    width: 100%;
+
+    margin-top: auto;
+
+    padding: 0.9rem 1rem;
+
+    border: 1px solid #c9a227;
+
+    background-color: #c9a227;
+
+    color: #000;
+
+    font-family: Poppins, sans-serif;
+
+    font-size: 0.9rem;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+.admin-logout:hover {
+    background-color: transparent;
+
+    color: #c9a227;
+}
+
+
+/* PAGE CONTENT */
+
+.admin-page-content {
+    flex: 1;
+
+    min-width: 0;
+    min-height: 100vh;
+
+    box-sizing: border-box;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+    .admin-layout {
+        flex-direction: column;
+    }
+
+
+    .admin-sidebar {
+        width: 100%;
+        min-width: 0;
+
+        min-height: auto;
+
+        padding: 1.5rem 1.2rem;
+
+        border-right: none;
+        border-bottom: 1px solid #292929;
+    }
+
+
+    .admin-sidebar-logo {
+        margin-bottom: 1.5rem;
+    }
+
+
+    .admin-sidebar-nav {
+        display: grid;
+
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 0.5rem;
+    }
+
+
+    .admin-logout {
+        margin-top: 1.5rem;
+    }
+
+
+    .admin-page-content {
+        width: 100%;
+        min-height: auto;
+    }
+}

@@ -1,0 +1,324 @@
+.add-car-page {
+    min-height: 100vh;
+    padding: 5rem 2rem;
+    background-color: #0b0b0b;
+    color: white;
+}
+
+.add-car-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+
+/* HEADER */
+
+.add-car-header {
+    max-width: 750px;
+    margin: 0 auto 3rem;
+    text-align: center;
+}
+
+.add-car-eyebrow {
+    margin-bottom: 1rem;
+    color: #c9a227;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.25em;
+}
+
+.add-car-header h1 {
+    margin: 0;
+    font-size: 3rem;
+    line-height: 1.1;
+    font-weight: 700;
+}
+
+.add-car-header > p:last-child {
+    max-width: 600px;
+    margin: 1.5rem auto 0;
+    color: #bdbdbd;
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+
+/* FORM */
+
+.add-car-form {
+    padding: 2.5rem;
+
+    border: 1px solid #292929;
+    background-color: #111111;
+
+    border-radius: 38px;
+}
+
+
+/* FORM FIELDS */
+
+.add-car-fields {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.form-group-full {
+    grid-column: 1 / -1;
+}
+
+
+/* LABELS */
+
+.form-group label {
+    color: #e0e0e0;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.input-hint {
+    margin-left: 8px;
+    color: #777;
+    font-size: 0.75rem;
+    font-weight: 400;
+}
+
+
+/* INPUTS + SELECT */
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    box-sizing: border-box;
+
+    padding: 0.85rem 1rem;
+
+    border: 1px solid #292929;
+    border-radius: 8px;
+
+    background-color: #0b0b0b;
+    color: white;
+
+    font-family: Poppins, sans-serif;
+    font-size: 0.9rem;
+
+    outline: none;
+
+    transition:
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.form-group input::placeholder {
+    color: #666;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #c9a227;
+    box-shadow: 0 0 0 1px #c9a227;
+}
+
+.form-group select {
+    cursor: pointer;
+}
+
+.form-group select option {
+    background-color: #111111;
+    color: white;
+}
+
+
+/* IMAGE LINKS TEXTAREA */
+
+.form-group textarea {
+    width: 100%;
+    box-sizing: border-box;
+
+    min-height: 130px;
+
+    padding: 0.85rem 1rem;
+
+    border: 1px solid #292929;
+    border-radius: 8px;
+
+    background-color: #0b0b0b;
+    color: white;
+
+    font-family: Poppins, sans-serif;
+    font-size: 0.9rem;
+    line-height: 1.6;
+
+    outline: none;
+
+    resize: vertical;
+
+    transition:
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.form-group textarea::placeholder {
+    color: #666;
+}
+
+.form-group textarea:focus {
+    border-color: #c9a227;
+    box-shadow: 0 0 0 1px #c9a227;
+}
+
+
+/* BOTTOM */
+
+.add-car-bottom {
+    margin-top: 2rem;
+    padding-top: 2rem;
+
+    border-top: 1px solid #292929;
+}
+
+
+/* FEATURED */
+
+.featured-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+
+    margin-bottom: 1.5rem;
+
+    color: #e0e0e0;
+    font-size: 0.9rem;
+
+    cursor: pointer;
+}
+
+.featured-checkbox input {
+    width: 17px;
+    height: 17px;
+
+    accent-color: #c9a227;
+
+    cursor: pointer;
+}
+
+
+/* MESSAGES */
+
+.add-car-error,
+.add-car-success {
+    margin: 0 0 1.5rem;
+    padding: 0.9rem 1rem;
+
+    border-radius: 8px;
+
+    font-size: 0.9rem;
+}
+
+.add-car-error {
+    border: 1px solid #6b2424;
+    background-color: #1a0d0d;
+    color: #ff8c8c;
+}
+
+.add-car-success {
+    border: 1px solid #496b3e;
+    background-color: #0d180d;
+    color: #9ad38d;
+}
+
+
+/* ACTIONS */
+
+.add-car-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+
+/* BUTTONS */
+
+.cancel-button,
+.add-car-button {
+    padding: 0.9rem 1.8rem;
+
+    border-radius: 0;
+
+    font-family: Poppins, sans-serif;
+    font-size: 0.95rem;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+.cancel-button {
+    border: 1px solid #fff;
+    background-color: #fff;
+    color: #000;
+}
+
+.cancel-button:hover {
+    background-color: transparent;
+    color: #fff;
+}
+
+.add-car-button {
+    border: 1px solid #c9a227;
+    background-color: #c9a227;
+    color: #000;
+}
+
+.add-car-button:hover {
+    background-color: transparent;
+    color: #c9a227;
+}
+
+.add-car-button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+    .add-car-page {
+        padding: 4rem 1.2rem;
+    }
+
+    .add-car-header h1 {
+        font-size: 2.3rem;
+    }
+
+    .add-car-form {
+        padding: 2rem 1.2rem;
+        border-radius: 25px;
+    }
+
+    .add-car-fields {
+        grid-template-columns: 1fr;
+    }
+
+    .form-group-full {
+        grid-column: auto;
+    }
+
+    .add-car-actions {
+        flex-direction: column-reverse;
+    }
+
+    .cancel-button,
+    .add-car-button {
+        width: 100%;
+    }
+}

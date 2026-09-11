@@ -1,0 +1,262 @@
+.delete-cars-page {
+    min-height: 100vh;
+    padding: 5rem 2rem;
+    background-color: #0b0b0b;
+    color: white;
+}
+
+.delete-cars-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* HEADER */
+
+.delete-cars-header {
+    max-width: 750px;
+    margin: 0 auto 3.5rem;
+    text-align: center;
+}
+
+.delete-cars-eyebrow {
+    margin-bottom: 1rem;
+    color: #c9a227;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.25em;
+}
+
+.delete-cars-header h1 {
+    margin: 0;
+    font-size: 3rem;
+    line-height: 1.1;
+    font-weight: 700;
+}
+
+.delete-cars-header > p:last-child {
+    max-width: 600px;
+    margin: 1.5rem auto 0;
+    color: #bdbdbd;
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+
+/* LIST */
+
+.delete-cars-list {
+    padding: 2.5rem 2rem;
+
+    border: 1px solid #292929;
+    background-color: #111111;
+
+    border-radius: 38px;
+}
+
+
+/* LIST HEADER */
+
+.delete-cars-list-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 2rem;
+}
+
+.delete-cars-list-header h2 {
+    margin: 0;
+    color: #c9a227;
+    font-size: 1.5rem;
+}
+
+.delete-cars-list-header span {
+    color: #999;
+    font-size: 0.9rem;
+}
+
+
+/* GRID */
+
+.delete-cars-grid {
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(280px, 1fr)
+    );
+
+    gap: 1.5rem;
+}
+
+
+/* CARD */
+
+.delete-car-card {
+    overflow: hidden;
+
+    border: 1px solid #292929;
+    background-color: #0b0b0b;
+
+    border-radius: 20px;
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease;
+}
+
+.delete-car-card:hover {
+    transform: translateY(-4px);
+    border-color: #c9a227;
+}
+
+
+/* IMAGE */
+
+.delete-car-image {
+    width: 100%;
+    height: 200px;
+    background-color: #151515;
+}
+
+.delete-car-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+/* INFO */
+
+.delete-car-info {
+    padding: 1.5rem;
+}
+
+.delete-car-year {
+    margin: 0 0 0.4rem;
+
+    color: #c9a227;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.delete-car-info h3 {
+    margin: 0;
+
+    color: white;
+    font-size: 1.25rem;
+}
+
+.delete-car-variant {
+    margin: 0.5rem 0 1rem;
+
+    color: #999;
+    font-size: 0.85rem;
+}
+
+
+/* DETAILS */
+
+.delete-car-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+
+    margin-bottom: 1.5rem;
+}
+
+.delete-car-details span {
+    padding: 0.35rem 0.6rem;
+
+    border: 1px solid #292929;
+    border-radius: 5px;
+
+    color: #bdbdbd;
+    font-size: 0.75rem;
+}
+
+
+/* BOTTOM */
+
+.delete-car-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 1rem;
+}
+
+.delete-car-bottom strong {
+    color: white;
+    font-size: 1.1rem;
+}
+
+
+/* DELETE BUTTON */
+
+.delete-car-bottom button {
+    padding: 0.7rem 1rem;
+
+    border: 1px solid #c9a227;
+    background-color: #c9a227;
+    color: #000;
+
+    font-family: Poppins, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+.delete-car-bottom button:hover {
+    background-color: transparent;
+    color: #c9a227;
+}
+
+.delete-car-bottom button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+
+/* MESSAGE */
+
+.delete-cars-message {
+    margin: 0;
+    padding: 3rem 1rem;
+
+    text-align: center;
+
+    color: #999;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+    .delete-cars-page {
+        padding: 4rem 1.2rem;
+    }
+
+    .delete-cars-header h1 {
+        font-size: 2.3rem;
+    }
+
+    .delete-cars-list {
+        padding: 1.5rem 1rem;
+        border-radius: 25px;
+    }
+
+    .delete-cars-list-header {
+        align-items: flex-start;
+    }
+
+    .delete-cars-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
