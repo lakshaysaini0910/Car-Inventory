@@ -19,7 +19,7 @@ const port = 3000;
 app.use(
     cors({
         // origin: "http://localhost:5173",
-        origin: "https://car-inventory.vercel.app",
+        origin: "https://car-inventory-theta.vercel.app",
         credentials: true,
     })
 );
