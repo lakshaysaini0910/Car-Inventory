@@ -3,7 +3,7 @@
     align-items: center;
     justify-content: space-between;
     background-color: black;
-    height: 20vh;
+    height: 14vh;
     padding: 0 5%;
     position: relative;
     z-index: 2;
@@ -20,7 +20,7 @@
 
 .logo img {
     display: block;
-    width: 120px;
+    width: 150px;
     height: auto;
 }
 

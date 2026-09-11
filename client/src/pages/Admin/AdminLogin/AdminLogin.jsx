@@ -51,7 +51,7 @@ const AdminLogin = () => {
 
                 <div className="admin-login-logo">
                     <img
-                        src="/logo.png"
+                        src="/CarLogo.png"
                         alt="Car Inventory"
                     />
                 </div>

@@ -42,7 +42,7 @@ const About = () => {
 
                 <meta
                     property="og:image"
-                    content="https://car-inventory.vercel.app/logo.png"
+                    content="https://car-inventory.vercel.app/CarLogo.png"
                 />
 
             </Helmet>

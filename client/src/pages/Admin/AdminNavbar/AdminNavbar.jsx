@@ -48,7 +48,7 @@ const AdminNavbar = () => {
                 <div className="admin-sidebar-logo">
 
                     <img
-                        src="/logo.png"
+                        src="/CarLogo.png"
                         alt="Car Inventory"
                     />
 

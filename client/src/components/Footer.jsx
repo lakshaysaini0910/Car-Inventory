@@ -9,7 +9,7 @@ const Footer = () => {
 
                 <div className="footer-brand">
                     <img
-                        src="/logo.png"
+                        src="/CarLogo.png"
                         alt="Car Inventory"
                     />
 

@@ -12,7 +12,7 @@ const Navbar = () => {
     <div className={`navbar ${location.pathname === '/' ? 'home-navbar' : ''}`}>
 
       <Link to="/" className="logo">
-        <img src="/logo.png" alt="Car Inventory" />
+        <img src="/CarLogo.png" alt="Car Inventory" />
       </Link>
 
 
